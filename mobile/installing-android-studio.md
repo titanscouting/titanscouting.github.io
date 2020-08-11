@@ -12,4 +12,4 @@ The Mac version is [here](http://www.youtube.com/watch?v=PwyZP6jeNjs):
 [![Thumbnail](http://img.youtube.com/vi/PwyZP6jeNjs/0.jpg)](http://www.youtube.com/watch?v=PwyZP6jeNjs "Installing Android Studio on macOS")
 
 ### Attribution
-Large parts of this article were sourced from [High Oak Robotics](https://highoakrobotics.github.io/FTC-Control-Docs/).
+This article was sourced from [High Oak Robotics](https://highoakrobotics.github.io/FTC-Control-Docs/).
