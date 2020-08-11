@@ -6,13 +6,13 @@ sort: 2
 
 # Prerequisites
 Before installing tra-analysis, make sure that you have installed the folowing prerequisites:
-- a common operating system like **Windows** or (*most*) distributions of **Linux**. BSD may work but has not been tested nor is it reccomended.
+- A common operating system like **Windows** or (*most*) distributions of **Linux**. BSD may work but has not been tested nor is it reccomended.
 - [Python](https://www.python.org/) version **3.6** or higher
 - [Pip](https://pip.pypa.io/en/stable/) (installation instructions [here](https://pip.pypa.io/en/stable/installing/))
 
 You might also want to install these tools to help with the installation or use of tra-analysis:
 - Preferred text editor (we recommended [VSCode](https://code.visualstudio.com/))
-- [Git](https://git-scm.com/) for versioning control (see our guide to using Git/GitHub [here](https://titanscouting.github.io/general/git-github))
+- [Git](https://git-scm.com/) for version control (see our guide to using Git/GitHub [here](https://titanscouting.github.io/general/git-github))
 
 # Validated Platforms
 Although any modern platform running standard software should be supported, the following specifications have been validated to work:
