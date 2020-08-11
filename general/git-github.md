@@ -1,5 +1,5 @@
 ---
-permalink: /git-github
+permalink: /general/git-github
 title: Setting Up Git and Github
 ---
 
