@@ -39,6 +39,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+readme_index:
+  with_frontmatter: true
+  
 kramdown:
   input: GFM
 
