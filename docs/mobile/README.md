@@ -1,7 +1,7 @@
 ---
-sort: 1
+sort: 3
 ---
 
-# Configuration
+# TRA Mobile App
 
 {% include list.liquid %}

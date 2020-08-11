@@ -1,7 +1,7 @@
 ---
-sort: 3
+sort: 1
 ---
 
-# Configuration
+# TRA Analysis
 
 {% include list.liquid %}

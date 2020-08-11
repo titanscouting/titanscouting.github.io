@@ -2,6 +2,6 @@
 sort: 2
 ---
 
-# Configuration
+# TRA REST API
 
 {% include list.liquid %}
