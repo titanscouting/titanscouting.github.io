@@ -16,13 +16,13 @@ remote_theme           : "rundocs/jekyll-rtd-theme"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "High Oak Robotics"
+title                    : "Titan Scouting"
 lang                     : "en-US"
-name                     : "High Oak Robotics"
-description              : "Setting up your control system since 2020."
-url                      : "https://highoakrobotics.github.io"
-baseurl                  : "/FTC-Control-Docs"
-repository               : "HighOakRobotics/FTC-Control-Docs"
+name                     : "Titan Scouting"
+description              : "Documentation for Titan Scouting software"
+url                      : "https://titanscouting.github.io"
+baseurl                  : "/"
+repository               : "titanscouting/titanscouting.github.io"
 edit: true
 
 copyright:
