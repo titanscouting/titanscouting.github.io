@@ -3,7 +3,7 @@ permalink: /mobile/android-studio
 title: Installing Android Studio
 ---
 
-We made a video on how to install Android Studio on Windows. Here is the [link](http://www.youtube.com/watch?v=__rgJPPFDgI):
+High Oak Robotics made a video on how to install Android Studio on Windows. Here is the [link](http://www.youtube.com/watch?v=__rgJPPFDgI):
 
 [![Thumbnail](http://img.youtube.com/vi/__rgJPPFDgI/0.jpg)](http://www.youtube.com/watch?v=__rgJPPFDgI "Installing Android Studio on Windows")
 
