@@ -1,0 +1,47 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                    : "jekyll-rtd-theme"
+remote_theme           : "rundocs/jekyll-rtd-theme"
+# minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "High Oak Robotics"
+lang                     : "en-US"
+name                     : "High Oak Robotics"
+description              : "Setting up your control system since 2020."
+url                      : "https://highoakrobotics.github.io"
+baseurl                  : "/FTC-Control-Docs"
+repository               : "HighOakRobotics/FTC-Control-Docs"
+edit: true
+
+copyright:
+  revision: true
+
+addons:
+  - github
+  - gems
+  - analytics
+
+# Reading Files
+exclude:
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
+
+kramdown:
+  input: GFM
+
+# Sass/SCSS
+sass:
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
