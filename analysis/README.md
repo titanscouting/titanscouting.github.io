@@ -2,6 +2,6 @@
 sort: 1
 ---
 
-# TRA Analysis
+# Analysis
 
 {% include list.liquid %}

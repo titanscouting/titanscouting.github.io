@@ -2,6 +2,6 @@
 sort: 3
 ---
 
-# TRA Mobile App
+# Mobile App
 
 {% include list.liquid %}
