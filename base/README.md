@@ -1,7 +1,7 @@
 ---
-sort: 4
+sort: 1
 ---
 
-# Mobile App
+# General
 
 {% include list.liquid %}

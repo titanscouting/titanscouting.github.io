@@ -1,7 +1,6 @@
 ---
-sort: 1
 permalink: /analysis/overview
-title: TRA Analysis Overview
+title: Analysis Overview
 ---
 
 # Overview 

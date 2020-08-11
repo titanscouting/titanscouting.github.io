@@ -1,7 +1,6 @@
 ---
-sort: 1
 permalink: /mobile/overview
-title: TRA Mobile Overview
+title: Mobile Overview
 ---
 
 # Overview 

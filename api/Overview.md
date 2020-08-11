@@ -1,7 +1,6 @@
 ---
-sort: 1
 permalink: /api/overview
-title: TRA API Overview
+title: API Overview
 ---
 
 # Overview 
