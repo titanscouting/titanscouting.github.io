@@ -27,14 +27,14 @@ A repository (repo) is the remote storage space for your code
 Cloning a repo downloads the repo onto your computer and sets up its configuration for use with git   
 #### Steps:
 * Open VSCode and press "Ctrl-Shift-G" to open the source control panel.
-* Select "Clone Repository"
+* Select "Clone Repository".
 * Paste the URL of the repo you would like to clone/.
-* Choose an empty folder to clone into for "Directory"  
-* Click "Clone"  
+* Choose an empty folder to clone into for "Directory".
+* Click "Clone".
 * Once it finishes, click "Open" on the dialog in the bottom-right corner. 
 
 ### Git Usage
-Run Git commands through the Git/Github extension in VSCode
+Run Git commands through the Git/Github extension in VSCode. 
 Make sure you’re on the right branch as well as under the right folder
 
 * To retrieve code from GitHub's remote repositories, use `git pull`
