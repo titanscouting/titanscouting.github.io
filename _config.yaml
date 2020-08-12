@@ -12,7 +12,6 @@
 
 # theme                    : "jekyll-rtd-theme"
 remote_theme           : "rundocs/jekyll-rtd-theme"
-# minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -24,7 +23,7 @@ url                      : "https://titanscouting.github.io"
 baseurl                  : "/"
 repository               : "titanscouting/titanscouting.github.io"
 edit: true
-
+author: "Titan Scouting"
 copyright:
   revision: true
 
