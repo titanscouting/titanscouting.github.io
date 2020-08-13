@@ -15,8 +15,11 @@ TRA API and TRA Analysis both use Docker for development. Docker is a software w
 * Virtualization must be enabled in your BIOS (click [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) to learn how to check if it is enabled).
 
 ## macOS
-
-TBD - For now, follow instructions on the Docker Website.
+* 2010 or new Mac hardware
+    - If you are not sure whether your hardware is supported, enter `sysctl kern.hv_support` into the terminal. It should output `kern.hv_support: 1`.
+* macOS 10.13 or newer
+    - macOS Catalina, Mojave, or High Sierra
+* At least 4GB of RAM
 
 ## Instructions for Windows
 ### Enabling WSL2
@@ -37,6 +40,12 @@ To enable WSL:
 4. Allow the installer to finish.
 5. Click "Close on restart". Docker has now been installed and will start on system startup. 
 6. After restarting, you may be prompted to install the WSL 2 Linux Kernel. Follow the instructions to install the kernel, and then click the restart button from the prompt.
+
+## Instructions for macOS
+
+1. Click [here](https://download.docker.com/mac/stable/Docker.dmg) to download Docker. 
+2. Double click the downloaded `.dmg` file and drag the Docker icon to the Applications folder.
+3. Double-click `Docker.app` in the Applications folder to start Docker.
 
 ## Common instructions
 These instructions are applicable to all platforms
