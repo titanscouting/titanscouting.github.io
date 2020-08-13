@@ -1,6 +1,7 @@
 ---
 permalink: /general/development/docker
 title: 1. Installing Docker
+sort: 1
 ---
 
 # Overview 

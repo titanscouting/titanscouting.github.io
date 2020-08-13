@@ -1,6 +1,7 @@
 ---
 permalink: /general/development/vs-code-docker
 title: 2. Configuring VS Code
+sort: 2
 ---
 
 # Configuring VSCode
