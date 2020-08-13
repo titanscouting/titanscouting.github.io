@@ -53,5 +53,5 @@ You must install the VSCode "Remote - Containers" extension to enable developmen
 5. Press "Enter" to confirm the volume name.
 6. Press "Enter" to confirm the target folder name.
 7. The repsitory should now open in the container.
-
+    - If prompted by Windows Defender Firewall, click "Allow access".
 **Please Note: Any non-pushed changes before closing the VS Code window will be lost. Make sure to commit and push your changes before exiting.**
