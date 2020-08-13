@@ -14,19 +14,21 @@ TRA API and TRA Analysis both use Docker for development. Docker is a software w
 * 4GB RAM 
 * Virtualization must be enabled in your BIOS (click [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) to learn how to check if it is enabled).
 ## macOS
-* 
+
+TBD - For now, follow instructions on the Docker Website.
+
 ## Instructions for Windows
-### 1. Enabling WSL2
+### Enabling WSL2
 Docker for Windows primarily runs off of the Windows Subsystem for Linux, which lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup. WSL2 is a new version of the Windows Subsystem for Linux architecture that powers the Windows Subsystem for Linux to run ELF64 Linux binaries on Windows. Docker uses the WSL2 backend which allows for better performance. 
 
-#### Instructions
+To enable WSL:
 
 1. Click on the Start button on your taskbar.
 2. Type "Turn Windows Features On or Off".
 3. Scroll down the menu and check the box next to "Windows Subsystem for Linux".
 4. Click "OK". Allow Windows to install all the neccessary components, and reboot when prompted. 
 
-### 2. Installing Docker
+### Installing Docker
 
 1. Click [here](https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe) to download Docker. 
 2. Run the downloaded executable.
@@ -54,4 +56,5 @@ You must install the VSCode "Remote - Containers" extension to enable developmen
 6. Press "Enter" to confirm the target folder name.
 7. The repsitory should now open in the container.
     - If prompted by Windows Defender Firewall, click "Allow access".
+
 **Please Note: Any non-pushed changes before closing the VS Code window will be lost. Make sure to commit and push your changes before exiting.**
