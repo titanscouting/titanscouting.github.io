@@ -1,5 +1,5 @@
 ---
-permalink: /development/docker
+permalink: /general/development/docker
 title: 1. Installing Docker
 ---
 
