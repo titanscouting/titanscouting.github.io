@@ -13,6 +13,7 @@ TRA API and TRA Analysis both use Docker for development. Docker is a software w
 * 64-bit processor (All Intel or AMD CPUs from the last 15 years are 64-bit processors).
 * 4GB RAM 
 * Virtualization must be enabled in your BIOS (click [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) to learn how to check if it is enabled).
+
 ## macOS
 
 TBD - For now, follow instructions on the Docker Website.
