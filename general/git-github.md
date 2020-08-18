@@ -14,7 +14,7 @@ title: Setting Up Git and Github
 ### Set GitHub Credentials in Git
 * Go to the Terminal (on Windows this is either GitBash or Powershell, on Mac or Linux it's Terminal)
 * once you're there run the following commands:   
-  * `git config --global user.name <your GitHub username>`   
+  * `git config --global user.name <your GitHub username or real name>`   
   * `git config --global user.email <the email you signed up to GitHub with>`   
 * You can confirm these commands worked by typing `git config --global user.name` (user.email for email)
 
