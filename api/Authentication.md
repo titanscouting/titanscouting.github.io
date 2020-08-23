@@ -13,4 +13,5 @@ We use Google Authentication so that we can identify the user submitting data to
 ## API Key Authentication
 While JWT authentication is suitable when an end-user application is contacting the API, this type of authentication is not suitable for applications which require permanent access in a more traditional manner. For these situations, the API supports API key authentication. The API issues both a client ID and a client secret to a user requesting an API key via an authenticated route. The client ID is a generated UUID, and the client secret is encrypted and hashed with `bcrypt` and stored in the database. This hash is then compared upon an authentication request. 
 
+## Controlling route access
 By default, any authenticated route can be accessed via JWT or API Key authentication. However, it is not desirable for some routes to be accessed via API key, such as the route to create an API key. In this scenario, you may use the `auth.noAPIKey` middleware to only allow JWT authentication for a given route.
