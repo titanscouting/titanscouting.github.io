@@ -31,4 +31,4 @@ The type is contained within the title and can be one of these types:
 * test: adding tests, refactoring test; no production code change
 * chore: updating build tasks, package manager configs, etc; no production code change
 
-Note: for the `titanscouting.github.io` documentation repository, all commits are of type `docs`.
+Note: for the `titanscouting.github.io` documentation repository, all commits can be assumed to be of type `docs`.
