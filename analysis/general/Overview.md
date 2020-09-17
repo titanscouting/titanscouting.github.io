@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/overview
+permalink: /analysis/general/overview
 title: Analysis Overview
 sort: 1
 ---

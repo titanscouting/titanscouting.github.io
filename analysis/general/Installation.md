@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/installation
+permalink: /analysis/general/installation
 title: Installation
 sort: 4
 ---

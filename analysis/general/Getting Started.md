@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/getting-started
+permalink: /analysis/general/getting-started
 title: Getting Started
 sort: 2
 ---

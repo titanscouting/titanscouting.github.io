@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/documentation
+permalink: /analysis/general/documentation
 title: Dependency Documentation
 sort: 3
 ---
