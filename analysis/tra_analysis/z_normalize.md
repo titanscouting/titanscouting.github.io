@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/z_normalize
+permalink: /analysis/tra_analysis/z_normalize
 title: z_normalize
 sort: 3
 ---

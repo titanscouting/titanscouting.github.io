@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/ClassificationMetric
+permalink: /analysis/tra_analysis/ClassificationMetric
 title: RegressionMetric
 sort: 8
 ---

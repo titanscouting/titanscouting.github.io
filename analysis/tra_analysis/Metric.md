@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/Metric
+permalink: /analysis/tra_analysis/Metric
 title: Metric
 sort: 6
 ---

@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/z_score
+permalink: /analysis/tra_analysis/z_score
 title: z_score
 sort: 2
 ---
