@@ -1,7 +1,6 @@
 ---
 permalink: /general/development/commit-guidlines
 title: Git Commit Message Guidelines
-sort: 3
 ---
 
 # Git Commit Message Guidelines
