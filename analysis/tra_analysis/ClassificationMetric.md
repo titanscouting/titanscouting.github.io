@@ -1,7 +1,7 @@
 ---
 permalink: /analysis/tra-analysis/ClassificationMetric
 title: RegressionMetric
-sort: 7
+sort: 8
 ---
 
 # analysis.ClassificationMetric()
