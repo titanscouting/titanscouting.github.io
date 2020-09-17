@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/analysis/histo_analysis
+permalink: /analysis/tra-analysis/histo_analysis
 title: histo_analysis
 sort: 4
 ---

@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/analysis/RegressionMetric
+permalink: /analysis/tra-analysis/RegressionMetric
 title: RegressionMetric
 sort: 7
 ---

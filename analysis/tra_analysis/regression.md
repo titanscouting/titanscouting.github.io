@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra-analysis/analysis/regression
+permalink: /analysis/tra-analysis/regression
 title: regression
 sort: 5
 ---
