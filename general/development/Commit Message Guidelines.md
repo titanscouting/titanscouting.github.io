@@ -9,9 +9,7 @@ sort: 3
 ## Introduction 
 This guide serves to show you how to write commit messages while working on Titan Scouting projects. There are many opinions on the "ideal" style in the world of development. Therefore, in order to reduce the confusion on what style you should follow, we urge all committers to refer to this style guide.
 
-## Commit Messages
-
-### Message Structure
+## Message Structure
 A commit messages consists of three distinct parts separated by a blank line: the title, an optional body and an optional footer. The layout looks like this:
 
 ```
