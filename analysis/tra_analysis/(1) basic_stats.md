@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra_analysis/(1) basic_stats
+permalink: /analysis/tra_analysis/basic_stats
 title: basic_analysis
 sort: 1
 ---
