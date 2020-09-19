@@ -14,8 +14,10 @@ from tra_analysis import analysis
 
 a = analysis.Array([1,2,3,4])
 b = analysis.Array([-1,-2,-3,4])
+
+a * b
 ```
 returns:
 ```
--30
+2
 ```
