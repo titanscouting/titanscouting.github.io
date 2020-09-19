@@ -8,6 +8,8 @@ sort: 10
 
 Performs a principal component analysis (pca) on the data. Refer to [sklearn's documentation](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) for more information on use.
 
+Given some ndarray and number of components to reduce, returns a reduced array.
+
 ## Example Usage
 ```
 from tra_analysis import analysis

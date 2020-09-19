@@ -8,6 +8,8 @@ sort: 9
 
 Performs a kmeans clusteriung analysis on some provided data. Refer to [sklearn's documentation](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) for more information on use.
 
+Given nd array of points, returns centers of clusters and array of classifications based on clusters.
+
 ## Example Usage
 ```
 from tra_analysis import analysis
