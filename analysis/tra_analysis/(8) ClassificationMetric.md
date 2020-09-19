@@ -1,6 +1,6 @@
 ---
 permalink: /analysis/tra_analysis/ClassificationMetric
-title: RegressionMetric
+title: ClassificationMetric
 sort: 8
 ---
 
