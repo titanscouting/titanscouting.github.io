@@ -29,5 +29,6 @@ The type is contained within the title and can be one of these types:
 * refactor: refactoring production code
 * test: adding tests, refactoring test; no production code change
 * chore: updating build tasks, package manager configs, etc; no production code change
+* deps: dependency-related change
 
 Note: for the `titanscouting.github.io` documentation repository, all commits can be assumed to be of type `docs`.
