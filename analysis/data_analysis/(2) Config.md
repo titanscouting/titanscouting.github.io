@@ -1,6 +1,6 @@
 ---
-permalink: /analysis/data_analysis/config
-title: `Configuring Data Analysis`
+permalink: /analysis/data_analysis/Config
+title: "Configuring Data Analysis"
 sort: 3
 ---
 

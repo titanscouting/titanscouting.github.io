@@ -10,7 +10,7 @@ Before installing and using data-analysis, make sure that you have installed the
 - [Python](https://www.python.org/) version **3.6** or higher
 - [Pip](https://pip.pypa.io/en/stable/) (installation instructions [here](https://pip.pypa.io/en/stable/installing/))
 
-## Installing Requirements
+# Installing Requirements
 
 Once navigated to the data-analysis folder run `pip install -r requirements.txt` to install all of the required python libraries.
 
