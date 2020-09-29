@@ -22,4 +22,4 @@ To run the data-analysis application, navigate to the data-analysis folder once 
 
 `pymongo.errors.ConfigurationError: Empty host (or extra comma in host list).`
 
-don't worry, you may have just not configured the application correctly, but would otherwise work. Refer to [link]() to learn how to configure data-analysis.
+don't worry, you may have just not configured the application correctly, but would otherwise work. Refer to [the documentation](https://titanscouting.github.io/analysis/data_analysis/Config) to learn how to configure data-analysis.
