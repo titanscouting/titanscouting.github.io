@@ -10,7 +10,8 @@ TRA API and TRA Analysis both use Docker for development. Docker is a software w
 
 # System Requirements
 ## Windows
-* Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later). If you have Windows 10 Home or a 32-bit edition of Windows, please contact the Titan Scouting lead. 
+* Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later). If you have a 32-bit edition of Windows, please contact the Titan Scouting lead. 
+* Windows 10 Home 64-bit: Follow this guide [here](https://docs.docker.com/docker-for-windows/install-windows-home/)
 * 64-bit processor (All Intel or AMD CPUs from the last 15 years are 64-bit processors).
 * 4GB RAM 
 * Virtualization must be enabled in your BIOS (click [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) to learn how to check if it is enabled).
