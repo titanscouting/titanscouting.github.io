@@ -18,10 +18,6 @@ title: Setting Up Git and Github
   * `git config --global user.email <the email you signed up to GitHub with>`   
 * You can confirm these commands worked by typing `git config --global user.name` (user.email for email)
 
-You would repeat this process (aside from git init and creating a new GitHub repo) whenever FTC releases an official update to their repo   
-To remove a remote, use `git remote rm <remote-name>` so you can repeat the process again without naming conflicts.  
-You could also skip creating new remotes altogether but it could get confusing (especially when FTC inevitably moves repos)  
-
 ### Cloning an existing Repository
 A repository (repo) is the remote storage space for your code   
 Cloning a repo downloads the repo onto your computer and sets up its configuration for use with git   
