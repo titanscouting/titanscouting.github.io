@@ -8,7 +8,6 @@ To allow the API to retrieve data from MongoDB, the API must be informed as to t
 *Note: while we currently use the same database for testing and production, this* **will** *change in the future. Be cognizant of this change when it comes to protect our data*
 
 ## Configuring WSL development
-  1. Obtain the MongoDB connection URI from the Titan Scouting lead.
   2. Open a command prompt in WSL (either from the Start Menu or from VS Code will do). 
   3. Type `nano ~/.bashrc` to edit your user's .bashrc file. This file is executed when you first log into WSL. 
   4. Navigate to the end of the file using your arrow keys.
@@ -21,9 +20,10 @@ The next time you start the API, the key will be provided to the application and
 
 ## Configuring Docker development
 The Docker development environment is configured through VS code. We will edit a file to provide the docker container with the correct environment variable. 
-  1. Open VS Code and open the API source code folder.  <ins>***DO NOT reopen the folder in container if prompted.*** </ins>
-  2. Expand the .devcontainer folder
-  3. Create a file named `.env`
-  4. In this file, type this, replacing `{MONGO_URI}` with the URI provided to you as such:  
+  1. Obtain the MongoDB connection URI from the Titan Scouting lead.
+  2. Open VS Code and open the API source code folder.  <ins>***DO NOT reopen the folder in container if prompted.*** </ins>
+  3. Expand the .devcontainer folder
+  4. Create a file named `.env`
+  5. In this file, type this, replacing `{MONGO_URI}` with the URI provided to you as such:  
     ```REDALLIANCEDBKEY="{MONGO_URI}"```
-  5. Click the green remote connections button on the bottom left of the screen, and click `Remote Container: Reopen in Container`, and wait for the container to build and open your development environment.
+  6. Click the green remote connections button on the bottom left of the screen, and click `Remote Container: Reopen in Container`, and wait for the container to build and open your development environment.
