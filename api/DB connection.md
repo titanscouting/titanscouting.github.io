@@ -12,7 +12,7 @@ To allow the API to retrieve data from MongoDB, the API must be informed as to t
   2. Open a command prompt in WSL (either from the Start Menu or from VS Code will do). 
   3. Type `nano ~/.bashrc` to edit your user's .bashrc file. This file is executed when you first log into WSL. 
   4. Navigate to the end of the file using your arrow keys.
-  5. Paste the following line at the end of the file, replacing `{MONGO_URI}` with the URI provided to you, as such: 
+  5. Paste the following line at the end of the file, replacing `{MONGO_URI}` with the URI provided to you, as such:  
     ```export REDALLIANCEDBKEY="{MONGO_URI}"```
   6. Press Ctrl-x, y, and then enter to save your changes and exit
   7. In the terminal prompt run `source ~/.bashrc` to apply the changes. 
