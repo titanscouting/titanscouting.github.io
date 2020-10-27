@@ -21,7 +21,7 @@ The next time you start the API, the key will be provided to the application and
 
 ## Configuring Docker development
 The Docker development environment is configured through VS code. We will edit a file to provide the docker container with the correct environment variable. 
-  1. Open VS Code and open the API source code folder. DO NOT reopen the folder in container if prompted
+  1. Open VS Code and open the API source code folder.  <ins>***DO NOT reopen the folder in container if prompted.*** </ins>
   2. Expand the .devcontainer folder
   3. Create a file named `.env`
   4. In this file, type this, replacing `{MONGO_URI}` with the URI provided to you as such:  
