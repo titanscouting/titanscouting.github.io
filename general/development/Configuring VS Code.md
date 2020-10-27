@@ -21,6 +21,6 @@ You must install the VSCode "Remote - Containers" extension to enable developmen
 6. Press "Enter" to confirm the target folder name.
 7. The repsitory should now open in the container.
     - If prompted by Windows Defender Firewall, click "Allow access".
-    - If, after cloning, you see many changes in Git, discard them. The only difference is the line endings. 
+    - If after cloning you see many changes in Git, discard them. The only difference is the line endings. 
 
 **Please Note: Any non-pushed changes before closing the VS Code window will be lost. Make sure to commit and push your changes before exiting.**
