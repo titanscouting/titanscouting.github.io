@@ -1,5 +1,5 @@
 ---
-permalink: /general/commit-guidlines
+permalink: /general/commit-guidelines
 title: Git Commit Message Guidelines
 ---
 
