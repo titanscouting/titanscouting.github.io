@@ -7,7 +7,7 @@ title: Annotated Route example
 This document contains an annotated example of a route and a database handler from the source code.
 This document can be used as somewhat of a checklist as to what files must be created and changed when writing a new endpoint.
 
-## Example Route - Annotated (src/routes/fetch2022Schedule.ts)
+## Example Route (src/routes/fetch2022Schedule.ts)
 ~~~javascript
 import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
 import StatusCodes from '../StatusCodes'; // import standard HTTP code responses
@@ -41,7 +41,7 @@ app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, 
 });
 };
 ~~~
-## Example Database Handler - Annotated (src/db-handlers/fetch2022Schedule.ts)
+## Example Database Handler (src/db-handlers/fetch2022Schedule.ts)
 ~~~javascript
 import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
 
@@ -61,7 +61,7 @@ export default async (db: any, competition: string): Promise<UserReturnData> => 
 }
 ~~~
 
-## Example entry in src/index.ts
+## Example entry in src/index.ts 
 ~~~javascript
 
 require('./routes/base')(app); // line 34
