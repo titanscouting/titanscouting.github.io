@@ -5,12 +5,16 @@ title: Annotated Route and Database Handler example
 
 # Overview
 This document contains an annotated example of a route and a database handler from the source code.
+This document can be used as somewhat of a checklist as to what files must be created and changed when writing a new endpoint.
+
 ## Example Route - Annotated (src/routes/fetch2022Schedule.ts)
 ~~~javascript
 import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
 import StatusCodes from '../StatusCodes'; // import standard HTTP code responses
 
-module.exports = (app: any, dbHandler: any) => {
+module.exports = (app: any, dbHandler: any) => { // accept the parameters provided in index.ts. If this was an authenticated route, auth would also be accepted
+// auth.checkAuth would be used as Express middleware.
+// See https://expressjs.com/en/guide/using-middleware.html for a guide to middleware. 
 app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, accessible at /api/fetch2022schedule
     const val: UserReturnData = new UserReturnData(); // initialize variable which will contain the data to return to the user
     const competition = String(req.query.competition); // get competition ID
@@ -54,3 +58,53 @@ export default async (db: any, competition: string): Promise<UserReturnData> => 
   return data;
 }
 ~~~
+
+## Example entry in src/index.ts
+~~~javascript
+
+require('./routes/base')(app); // line 34
+// bunch of routes skipped here for length
+require('./routes/fetch2022Schedule')(app, dbHandler); // an instance of the express app, as well as the dbHandler object is provided to the route.
+require('./routes/checkUserTeam')(app, auth);
+
+// start the server and export for use in the unit tests, etc. 
+~~~
+
+## Example entry in src/dbHandler.ts
+~~~javascript
+export { default as addKey } from './db-handlers/addKey'; //line 3
+// bunch of handlers skipped here for length
+export { default as fetch2022Schedule } from './db-handlers/fetch2022Schedule';
+~~~
+
+## Example Unit Test entry in test/fetch2022Schedule.js
+~~~javascript
+process.env.NODE_ENV = 'test';
+
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+
+const server = require('../src/index.ts');
+
+const should = chai.should();
+
+chai.use(chaiHttp);
+// all above is boilerplate: allows us to use the testing framework to make assertions, and gets an instance of the API server to start
+
+/*
+  * Test the GET route
+  */
+describe('GET /api/fetch2022Schedule', () => { // describe the route that is being tested
+  it('it should GET the schedule for 2022', (done) => { // describe the expected behavior
+    chai.request(server)
+      .get('/api/fetch2022Schedule?competition=2020ilch') // perform the request with the neccessary parameters
+      .end((err, res) => {
+        res.should.have.status(200); // check that the HTTP status is returned as 200 (signals success)
+        res.body.should.have.property('data'); // check that there is a property called success
+        res.body.should.have.property('success').eql(true); // check that the property success exists and is equal to `true`
+        done(); //signal that this test is done 
+      });
+  });
+});
+~~~
+
