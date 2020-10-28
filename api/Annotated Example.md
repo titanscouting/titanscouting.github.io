@@ -4,7 +4,7 @@ title: Annotated Route and Database Handler example
 ---
 
 # Overview
-This file contains an annotated example of a route and a database handler from the source code.
+This document contains an annotated example of a route and a database handler from the source code.
 ## Example Route - Annotated (src/routes/fetch2022Schedule.ts)
 ~~~javascript
 import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
