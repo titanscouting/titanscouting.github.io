@@ -1,6 +1,6 @@
 ---
 permalink: /api/annotated-example
-title: Annotated Route and Database Handler example
+title: Annotated Route example
 ---
 
 # Overview
