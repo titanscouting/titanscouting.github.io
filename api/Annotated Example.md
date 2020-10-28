@@ -17,6 +17,7 @@ module.exports = (app: any, dbHandler: any) => { // accept the parameters provid
 // See https://expressjs.com/en/guide/using-middleware.html for a guide to middleware. 
 app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, accessible at /api/fetch2022schedule
     const val: UserReturnData = new UserReturnData(); // initialize variable which will contain the data to return to the user
+    // UserReturnData is a data type and structure which we imported earlier to standardize API returns
     const competition = String(req.query.competition); // get competition ID
     if (!(competition)) { // indicate error if the competition was not provided. 
         val.err_occur = true;
