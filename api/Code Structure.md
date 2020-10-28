@@ -15,7 +15,7 @@ The main `src` folder contains data return structures and the main modules for o
   * Database handlers are files corresponding to each route which allows the route to query the database for the appropriate information. For example, the route `fetch2022Schedule.ts` in `src/routes` also has a database handler named `fetch2022Schedule.ts` in `src/db-handlers`.
 * `Scouter.ts` is a data structure which represents a scouter. It contains the name, Google ID, and team number of a user.
 * `UserReturnData.ts` is a data structure for data returns to the REST API. It contains the data, whether an error occured, and if an error occured the reason that the error occured. 
-* `StatusCodes.ts` is a data structure which contains the HTTP Status Codes which are provided to the user depending on various return scenarios. These codes cover:  
+* `StatusCodes.ts` is a data structure which contains the [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) which are provided to the user depending on various return scenarios. These codes cover:  
     * 200: Success
     * 404: No data or not enough information
     * 401: Not authorized 
