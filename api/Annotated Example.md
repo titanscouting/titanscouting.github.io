@@ -12,7 +12,8 @@ This document can be used as somewhat of a checklist as to what files must be cr
 import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
 import StatusCodes from '../StatusCodes'; // import standard HTTP code responses
 
-module.exports = (app: any, dbHandler: any) => { // accept the parameters provided in index.ts. If this was an authenticated route, auth would also be accepted
+module.exports = (app: any, dbHandler: any) => { 
+// accept the parameters provided in index.ts. If this was an authenticated route, auth would also be accepted
 // auth.checkAuth would be used as Express middleware.
 // See https://expressjs.com/en/guide/using-middleware.html for a guide to middleware. 
 app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, accessible at /api/fetch2022schedule
@@ -65,7 +66,8 @@ export default async (db: any, competition: string): Promise<UserReturnData> => 
 
 require('./routes/base')(app); // line 34
 // bunch of routes skipped here for length
-require('./routes/fetch2022Schedule')(app, dbHandler); // an instance of the express app, as well as the dbHandler object is provided to the route.
+require('./routes/fetch2022Schedule')(app, dbHandler); 
+// ^ an instance of the express app, as well as the dbHandler object is provided to the route.
 require('./routes/checkUserTeam')(app, auth);
 
 // start the server and export for use in the unit tests, etc. 
@@ -90,7 +92,8 @@ const server = require('../src/index.ts');
 const should = chai.should();
 
 chai.use(chaiHttp);
-// all above is boilerplate: allows us to use the testing framework to make assertions, and gets an instance of the API server to start
+// all above is boilerplate: allows us to use the testing framework to make assertions, 
+// and gets an instance of the API server to start
 
 /*
   * Test the GET route
