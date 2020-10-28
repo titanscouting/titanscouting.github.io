@@ -28,3 +28,5 @@ Each TypeScript file contains the code for a specific route, which is executed w
 
 ### src/db-handlers
 Each TypeScript file contains the code which fetches the data from the database for the route with the corresponding name. See above for an explanation of the system. This file contains code for querying the database, as well as any manipulation which needs to be done to the retrieved data.
+
+## Deployment files (deploy)
