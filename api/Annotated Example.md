@@ -35,3 +35,22 @@ app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, 
 });
 };
 ~~~
+## Example Database Handler - Annotated (src/db-handlers/fetch2022Schedule.ts)
+~~~javascript
+import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
+
+export default async (db: any, competition: string): Promise<UserReturnData> => { // take input of a DB instance and the competition
+  const data: UserReturnData = { err_occur: false, err_reasons: [], data: {} }; // init the UserReturnData for storing values from the DB in
+  const dbo = db.db('data_scouting'); // specify the databse to query
+  const myobj = { teams: { $all: ['2022'] }, competition }; 
+  // ^ specify the query to make. In this case, we are looking for all enteries where the team is 2022, and the competition is the specified competition
+  try {
+    data.data = await dbo.collection('matches').find(myobj).toArray(); // get the data from the DB and convert it from a cursor to an array
+  } catch (err) {
+    data.err_occur = true; // if an error occured, indicate that one occured and push the cause
+    data.err_reasons.push(err);
+    console.error(err); // log any errors to the console for debugging
+  }
+  return data;
+}
+~~~
