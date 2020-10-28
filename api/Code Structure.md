@@ -21,3 +21,38 @@ The main `src` folder contains data return structures and the main modules for o
     * 401: Not authorized 
         * 403: API key authentication not allowed
 * `authHandler.ts` verifies the identity of users that are accessing authenticated routes. This handler verifies both Google and API key-based access attempts. To learn more about the authentication system for the API, click [here](/api/authentication)
+
+### src/routes
+Each TypeScript file contains the code for a specific route, which is executed when a user queries the API. This file contains code for parameter verification and data returns to the user.
+
+#### Example Route - Annotated
+    import UserReturnData from '../UserReturnData'; // import the data struct which stores data to return to the user
+    import StatusCodes from '../StatusCodes'; // import standard HTTP code responses
+
+    module.exports = (app: any, dbHandler: any) => {
+    app.get('/api/fetch2022Schedule', async (req: any, res:any) => { // route name, accessible at /api/fetch2022schedule
+        const val: UserReturnData = new UserReturnData(); // initialize variable which will contain the data to return to the user
+        const competition = String(req.query.competition); // get competition ID
+        if (!(competition)) { // indicate error if the competition was not provided. 
+            val.err_occur = true;
+            val.err_reasons.push('A required parameter (competition) was not provided'); 
+        } else { // Only run the DB query if the correct info was provided
+            val.data = await dbHandler.fetch2022Schedule(req.db, competition).catch((e) => { console.error(e); val.err_occur = true; }); // asynchronusly get data from the DB and store it in the UserReturnData instance. 
+        }
+        if (val.err_occur === false) { // if no error occured, return the data
+        res.json({
+            success: true,
+            competition,
+            data: val.data.data,
+        });
+        } else { // if an error occured, return that one occured and what error occured.
+        res.status(StatusCodes.no_data).json({
+            success: false,
+            reasons: val.err_reasons,
+        });
+        }
+    });
+    };
+
+### src/db-handlers
+Each TypeScript file contains the code which fetches the data from the database for the route with the corresponding name. See above for an explanation of the system. This file contains code for querying the database, as well as any manipulation which needs to be done to the retrieved data.
