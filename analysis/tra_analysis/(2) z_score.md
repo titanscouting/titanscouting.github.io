@@ -6,7 +6,7 @@ sort: 2
 
 # analysis.z_score(point, mean, stdev)
 
-Calculates z score of a data point (the associated score of the point on a normalized curve) relative to the rest of the dataset. Requires the point, the mean of the set, adn the standard deviation of the set. Outputs the calculated z score as a python numerical.
+Calculates z score of a data point (the associated score of the point on a normalized curve) relative to the rest of the dataset. Requires the point, the mean of the set, and the standard deviation of the set. Outputs the calculated z score as a python numerical.
 
 [Read here](https://www.statisticshowto.com/probability-and-statistics/z-score/) for more information about normal curves and z scores. 
 
