@@ -1,10 +1,10 @@
 ---
-permalink: /analysis/tra_analysis/z_score
+permalink: /analysis/tra_analysis/Analysis/z_score
 title: z_score
-sort: 2
+sort: 3
 ---
 
-# analysis.z_score(point, mean, stdev)
+# Analysis.z_score(point, mean, stdev)
 
 Calculates z score of a data point (the associated score of the point on a normalized curve) relative to the rest of the dataset. Requires the point, the mean of the set, and the standard deviation of the set. Outputs the calculated z score as a python numerical.
 
