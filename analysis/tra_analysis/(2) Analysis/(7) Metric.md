@@ -4,14 +4,14 @@ title: Metric
 sort: 7
 ---
 
-# analysis.Metric
+# tra_analysis.Analysis.Metric
 
-Metric is a class containing 3 submodules. The submodules are match performance rating systems including elo, glicko2, and trueskill.
+Metric is a module containing 3 submodules. The submodules are match performance rating systems including elo, glicko2, and trueskill.
 
 Note: not to be confused with metrics.
-Note: since update 3.x, the classness of this module has been removed.
+After update 3.x, the classness of this module has been removed.
 
-# Analysis.Metric.elo(starting_score, opposing_score, observed, N, K)
+# tra_analysis.Analysis.Metric.elo(starting_score, opposing_score, observed, N, K)
 
 The [elo]((https://en.wikipedia.org/wiki/Elo_rating_system)) ranking system was developed primarily to rank chess players objectively using a score system. Its use can be extended to any zero sum game.
 
@@ -38,7 +38,7 @@ returns:
 1538.118959324716
 ```
 
-# Analysis.Metric.glicko2(starting_score, starting_rd, starting_vol, opposing_score, opposing_rd, observations)
+# tra_analysis.Analysis.Metric.glicko2(starting_score, starting_rd, starting_vol, opposing_score, opposing_rd, observations)
 
 The [glicko2](http://www.glicko.net/glicko/glicko2.pdf) rating system was designed to improve on the elo system by introducing a rating deviation (rd) and rating volitility (vol) in addition to the rating. It can also calculate scores for several consecutive games and expects opposing_score and opposing_rd to be lists
 
@@ -65,7 +65,7 @@ returns:
 (1633.1498393809143, 134.50703588188637, 0.059986396179992955)
 ```
 
-# Analysis.Metric.trueskill(teams_data, observations)
+# tra_analysis.Analysis.Metric.trueskill(teams_data, observations)
 
 The [glicko2](http://www.glicko.net/glicko/glicko2.pdf) rating system was developed by microsoft to rank players in games that involved more than 2 players per game. 
 

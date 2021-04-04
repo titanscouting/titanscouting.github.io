@@ -4,7 +4,7 @@ title: histo_analysis
 sort: 5
 ---
 
-# Analysis.histo_analysis(hist_data)
+# tra_analysis.Analysis.histo_analysis(hist_data)
 
 Does analysis on historical (order dependant) data by taking point to point derivatives and calculating mean and standard deviation of derivatives. It is most useful in calculating the volatility of a trend. Takes a 2D array as input and returns the mean and standard deviation of the derivatives. The input must be a =n array of x values on one axis and y values on another. 
 

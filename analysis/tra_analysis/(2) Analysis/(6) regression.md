@@ -4,7 +4,7 @@ title: regression
 sort: 6
 ---
 
-# Analysis.regression(inputs, outputs, args)
+# tra_analysis.Analysis.regression(inputs, outputs, args)
 
 Performs a number of specified regressions on a set of 2D data. Given: 
 - inputs (x values or independent variable values)

@@ -4,7 +4,7 @@ title: z_normalize
 sort: 4
 ---
 
-# Analysis.z_normalize(array, *args)
+# tra_analysis.Analysis.z_normalize(array, *args)
 
 Normalizes an axis of an array by fitting it to a normal curve. The function takes in some array (n >= 1) and an option list of axes to normalize against (if no axes are provided then no normalization occurs). Returns a normalized array of the same size. 
 

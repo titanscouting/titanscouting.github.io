@@ -1,7 +1,7 @@
 ---
 permalink: /analysis/tra_analysis/RegressionMetric
 title: RegressionMetric
-sort: 7
+sort: 10
 ---
 
 # analysis.RegressionMetric()
@@ -14,12 +14,12 @@ The default behavior of calling the class is to return all three metrics. Given 
 
 ## Example Usage
 ```
-from tra_analysis import analysis
+from tra_analysis import RegressionMetric
 
 predictions = [1.2, 3.4, 0.6, 7.8, 4.3, 8.9]
 targets = [0.3, 5.2, 9.8, 1.6, 5.0, 7.6]
 
-analysis.RegressionMetric(predictions, targets)
+RegressionMetric(predictions, targets)
 ```
 returns:
 ```

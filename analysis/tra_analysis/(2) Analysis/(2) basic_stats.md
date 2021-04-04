@@ -4,7 +4,7 @@ title: basic_analysis
 sort: 2
 ---
 
-# Analysis.basic_stats(data)
+# tra_analysis.Analysis.basic_stats(data)
 
 Performs basic statistics tests including:
 - mean
