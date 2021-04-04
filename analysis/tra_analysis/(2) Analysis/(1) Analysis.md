@@ -1,5 +1,5 @@
 ---
-permalink: /analysis/tra_analysis/Analysis
+permalink: /analysis/tra_analysis/Analysis/Analysis
 title: Analysis
 sort: 1
 ---
