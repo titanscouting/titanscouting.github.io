@@ -2,6 +2,6 @@
 sort: 3
 ---
 
-# Data Analysis Tools
+# Superscript (Data Analysis Application)
 
 {% include list.liquid %}
