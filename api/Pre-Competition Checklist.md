@@ -119,7 +119,7 @@ The API needs an entry of each match at each competition. Each match at each com
 * match (int): Match number
   * example: 1
 * teams (array<string>): Array of team numbers in the match. The first three entries should be on the blue alliance, and the last 3 on the red alliance.
-* scouters (array<string|object>): Each array item corresponds to the same position team in the `teams` array. If the team is not being scouted, the element should be `false`. The API will change this element to the scouter information (scouter name and ID) when the team is being scouted. 
+* scouters (array<string\|object>): Each array item corresponds to the same position team in the `teams` array. If the team is not being scouted, the element should be `false`. The API will change this element to the scouter information (scouter name and ID) when the team is being scouted. 
 
 Example entry: 
 
