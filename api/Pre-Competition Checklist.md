@@ -14,9 +14,6 @@ Example entry:
 
 ```json
 {
-    "_id": {
-        "$oid": "61da0e5b584997e2ddebd149"
-    },
     "competition": "2022iacf",
     "friendlyName": "2022 Iowa Regional - Cedar Falls, IA"
 }
@@ -79,7 +76,6 @@ The object structure is as follows:
   * Each screen is an object, with the only key in the object being the name of the tab. 
   * The value for this key is an array of objects, with each object being a widget that is presented on the tab. 
   * The widget contains three attributes: `name` (human-readable name of the data), `key` (JSON key for the data), `widget` (type of the widget: {segment, stepper, text-area}, `options?` (for segments only, the radio button options the user can select.))
-```
 
 Example entry: 
 
