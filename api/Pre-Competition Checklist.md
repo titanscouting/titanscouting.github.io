@@ -63,12 +63,102 @@ Example entry:
  
 ## `teamlist/nicknames`
 
-Ensure that the nicknames for all teams at this competition is present in this object. You can find this data on The Blue Alliance or other FRC sources. 
+Ensure that the nicknames for all teams at this competition is present in this object. You can find this data on The Blue Alliance or other FRC sources. The object key should be the team number, and the key's value should be the team's nickname.
 Since this list is not changed per competition, some teams may already be present as we have competed with them before.
     
 ## `configs/match` and `config/pit`
 
 These configs need to be created to configure the scouting application for each new competition. Refer to previous competitions' configs for guidance.
+The object structure is as follows:
+
+* team (string): Team number
+  * example: "2022"
+* competition (string): The competition identifier for the team's current competition, as created above. 
+  * example: "2022iacf"
+* config (array<Screen>): Array of tabs that are presented in the scouting screen.
+  * Each screen is an object, with the only key in the object being the name of the tab. 
+  * The value for this key is an array of objects, with each object being a widget that is presented on the tab. 
+  * The widget contains three attributes: `name` (human-readable name of the data), `key` (JSON key for the data), `widget` (type of the widget: {segment, stepper, text-area}, `options?` (for segments only, the radio button options the user can select.))
+```
+
+Example entry: 
+
+```json
+{
+	"team": "2022",
+	"competition": "2022iacf",
+	"config": [{
+			"Auto": [{
+				"name": "Segment example (like radio)",
+				"key": "segment-example",
+				"widget": "segment",
+				"options": ["Option 1", "Option 2", "Option 3"]
+			}]
+		},
+		{
+			"Teleop": [{
+				"name": "Stepper example (increment number)",
+				"key": "stepper-example",
+				"widget": "stepper"
+			}]
+		},
+		{
+			"Notes": [{
+				"name": "Text area example",
+				"key": "text-area-example",
+				"widget": "text-area"
+			}]
+		}
+	]
+}
+```
 
 ## `data_scouting/matches`
-Documentation in progress - define each match with teams and associated scouters (initially set to false but populated by the API)
+The API needs an entry of each match at each competition. Each match at each competition has its own entry in the database, with the following structure:
+
+* owner (string): The team that owns this entry (team that is scouting)
+  * example: "2022"
+* competition (string): The competition this match is at
+  * example: "2022iacf"
+* match (int): Match number
+  * example: 1
+* teams (array<string>): Array of team numbers in the match. The first three entries should be on the blue alliance, and the last 3 on the red alliance.
+* scouters (array<string|object>): Each array item corresponds to the same position team in the `teams` array. If the team is not being scouted, the element should be `false`. The API will change this element to the scouter information (scouter name and ID) when the team is being scouted. 
+
+Example entry: 
+
+```json
+{
+   "teams":[
+      "5350",
+      "5133",
+      "3734",
+      "63",
+      "1675",
+      "8160"
+   ],
+   "scouters":[
+      false,
+      {
+         "name":"Scouter 2",
+         "id":"190334453606510070000"
+      },
+      {
+         "name":"Scouter 3",
+         "id":"174581233308818200000"
+      },
+      {
+         "name":"Scouter 4",
+         "id":"118006453019498350000"
+      },
+      {
+         "name":"Scouter 5",
+         "id":"129904896377139080000"
+      },
+      false
+   ],
+   "match":1,
+   "competition":"2020ilch",
+   "owner":"2022"
+}
+```
