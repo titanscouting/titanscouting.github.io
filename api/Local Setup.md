@@ -5,19 +5,13 @@ title: Local Setup
 
 # Overview of Local API Development Setup
 
-Download WSL2
-
-Download Windows Terminal (optional)
-
-Install node
-
-Install yarn
-
-Install redis server
-
-Clone github repository
-
-Copy and paste the .env config file
+1. Download WSL2
+2. Download Windows Terminal (optional)
+3. Install node
+4. Install yarn
+5. Install redis server
+6. Clone github repository
+7. Copy and paste the .env config file
 
 ## Download WSL2
 
@@ -42,13 +36,14 @@ https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
 2. Create tabs using the dropdown arrow in the top tab and selecting Ubuntu
 
 ## Install Node, Yarn, and Redis
-1. If you created a src directory, make sure to run the following commands within it
+1. Run the following global commands to download the necessary packages
 ```bash
-sudo apt install nodejs
-sudo apt install npm
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo npm install -g yarn
 sudo apt install redis-server
 ```
+https://github.com/nodesource/distributions
 https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-the-yarn-package-manager-for-node-js
