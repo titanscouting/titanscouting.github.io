@@ -21,11 +21,18 @@ module.exports = (app: any, dbHandler: any, auth: any) => {
     }),
   } // define the validation schema - in this case, the user is required to provide the competition ID as a query parameter
   app.get('/api/fetchTeamSchedule', auth.checkAuth, validate(validation, { keyByField: true }, { allowUnknown: true }), async (req: any, res:any) => {
-    // auth.checkAuth checks user credentials (Google or API key), `validate()` runs validation using the defined schema, and allows keys that aren't present in the validation schema.
+    // auth.checkAuth checks user credentials (Google or API key)
+    // `validate()` runs validation using the defined schema, and allows keys that aren't present in the validation schema (such as CLIENT_ID and CLIENT_SECRET)
     const val: UserReturnData = new UserReturnData();
     const competition = String(req.query.competition);
-    const scouter: Scouter = { name: String(res.locals.name), id: String(res.locals.id), team: String(res.locals.team) }; // force conversion to string - may not be needed anymore but was added to all routes as a quick-fix during competition.
-    val.data = await dbHandler.fetchTeamSchedule(req.db, competition, scouter).catch((e) => { console.error(e); val.err_occur = true; }); // grab data from the database using the associated DB handler - if there is an error, throw an error and mark an error to the user. Notice how we pass the scouter to the DB handler - this allows the DB handler to get the user's team, which we have verified with their credentials.
+    const scouter: Scouter = { name: String(res.locals.name), id: String(res.locals.id), team: String(res.locals.team) }; 
+    // force conversion to string - may not be needed anymore but was added to all routes as a quick-fix during competition.
+    
+    val.data = await dbHandler.fetchTeamSchedule(req.db, competition, scouter).catch((e) => { console.error(e); val.err_occur = true; }); 
+    
+    // grab data from the database using the associated DB handler - if there is an error, throw an error and mark an error to the user.
+    // Notice how we pass the scouter to the DB handler - this allows the DB handler to get the user's team, which we have verified with their credentials.
+    
     if (val.err_occur === false) { // if our request successfully retrieves data from the DB, return it to the user
       res.json({
         success: true,
