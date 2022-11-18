@@ -13,4 +13,4 @@ Currently, Titan Scouting has 3 main products under the "The Red Alliance" (TRA)
 * TRA Mobile: React Native mobile application for collecting data via human scouters.
 
 # Contact
-Please email us at: [titanscout2022@gmail.com](mailto:titanscouting@epochml.org)
+Please email us at: [titanrobotics2022@imsa.edu](mailto:titanrobotics2022@imsa.edu)
