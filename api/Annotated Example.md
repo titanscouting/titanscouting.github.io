@@ -88,7 +88,7 @@ export { default as addKey } from './db-handlers/addKey'; //line 3
 export { default as fetchTeamSchedule } from './db-handlers/fetchTeamSchedule';
 ~~~
 
-## Example Unit Test entry in test/fetch2022Schedule.js
+## Example Unit Test entry in test/fetchTeamSchedule.js
 
 Note: this unit test entry is a bit flawed because it only checks for the simplest case. Unit tests should also verify that the API behaves as expected when not provided authentication credentials, when bad data is given, required paramters aren't given, etc. Ideally, it should also verify a few traits of the data (such that there are X number of matches with each match having 6 teams).
 
