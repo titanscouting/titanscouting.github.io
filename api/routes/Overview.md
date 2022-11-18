@@ -5,4 +5,4 @@ title: Route Documentation
 
 # Routes List
 
-Please refer to [https://titanscouting.epochml.org/docs/](https://titanscouting.epochml.org/docs/) for the full API route documentation.
+Please refer to [https://scouting.titanrobotics2022.com](https://scouting.titanrobotics2022.com) for the full API route documentation.
