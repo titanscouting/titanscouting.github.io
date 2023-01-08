@@ -158,3 +158,5 @@ Example entry:
    "owner":"2022"
 }
 ```
+# Populating at the competition
+Follow the instructions at [titanscouting/tra-scripts](https://github.com/titanscouting/tra-scripts) to input the practice and qualifier match schedule as they are released on The Blue Alliance. Requires Python 3.6+.
