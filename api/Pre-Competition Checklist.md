@@ -159,4 +159,4 @@ Example entry:
 }
 ```
 # Populating at the competition
-Follow the instructions at [titanscouting/tra-scripts](https://github.com/titanscouting/tra-scripts) to input the practice and qualifier match schedule as they are released on The Blue Alliance. Requires Python 3.6+.
+Follow the instructions at [titanscouting/tra-scripts](https://github.com/titanscouting/tra-scripts) to input the practice and qualifier match schedule as they are released on The Blue Alliance. Requires Python 3.6+. You must be a member of the titanscouting GitHub organization to view this repo.
