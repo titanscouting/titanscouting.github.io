@@ -35,8 +35,6 @@ While our team already has a team entry, if a new team is joining they will need
   * example: ["imsa.edu"]
 * authorizedUsers (array<string>): An array of users that do not belong to the above domain but should also be allowed to sign in. This feature is useful for mentors, etc.
   * example: ["mentor@frc2022.com", "student@frc2022.com"]
-* admins (array<string>): An array of users that are technical administrators for the team. This array is not currently used but will be used in the future to only allow admins to perform certain privileged tasks. 
-  * example: ["admin@frc2022.com", "root@frc2022.com"]
 
 Example entry: 
 ```json
@@ -50,14 +48,37 @@ Example entry:
       "mentor@frc2022.com",
       "student@frc2022.com"
    ],
-   "admins":[
-      "admin@frc2022.com",
-      "root@frc2022.com",
-   ]
 }
 ```
 2. Set team's `currentCompetition` attribute to current competition identifier.
- 
+	
+## `rbac/roles`
+
+Define a team's technical administrators so that those users can perform privileged operations from the API (such as editing the match config or changing the active competition. 
+	
+Create a new entry with the following structure for each user:
+	
+* roles (array<string>): An array of roles that a user has. 
+  * example: ["admin", "broadcast"]
+
+* team (string): Team number
+  * example: "2022"
+* id (string): The user's identifier (email for social logins, and CLIENT_ID for API keys). 
+  * example: "dsingh@imsa.edu"
+
+Example entry:
+```json
+{
+   "team":"2022",
+   "id":"dsingh@imsa.edu",
+   "roles":[
+      "admin"
+   ]
+}
+```
+	
+	
+
 ## `teamlist/nicknames`
 
 Ensure that the nicknames for all teams at this competition is present in this object. You can find this data on The Blue Alliance or other FRC sources. The object key should be the team number, and the key's value should be the team's nickname.
